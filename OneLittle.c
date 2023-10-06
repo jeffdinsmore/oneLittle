@@ -10,32 +10,22 @@
 #define NITEMS 10
 
 char thing[] = "spider";
-//char things = "";
+
 int main() {
-	
-	void displayCountUp(int count, char thing[], int MaxCount){
+	void displayCountUp(int count, char thingy[], int MaxCount){
 		if(count % 3 == 0)
-            printf("%i little %ss\n", count, thing);
+            printf("%i little %ss\n", count, thingy);
         else if(count == MaxCount)
-            printf("%i little %s bugs\n", count, thing);
+            printf("%i little %s bugs\n", count, thingy);
         else
-            printf("%i little\n", count);
+            printf("%i little, ", count);
 	}
 	void print(char things[]){
 		printf("%s", things);
 	}
-		for(int i = 1; i <= NITEMS; i++){
-			displayCountUp(i, thing, NITEMS);
-		}
-		/*for(int i = 1; i <= NITEMS; i++){
-			//displayCount(i, NITEMS)
-        if(i % 3 == 0)
-            printf("%i little %ss\n", i, thing);
-        else if(i == NITEMS)
-            printf("%i little %s bugs\n", i, thing);
-        else
-            printf("%i little\n", i);
-    }*/
+	for(int i = 1; i <= NITEMS; i++){
+		displayCountUp(i, "Spider", NITEMS);
+	}
     printf("\n");
     int j = 9;
     for(int i = NITEMS; i >= 1; i--){
