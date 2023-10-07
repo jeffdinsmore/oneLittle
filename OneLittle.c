@@ -1,7 +1,9 @@
 /******
 
-@Author Jeff Dinsmore
-@Date 10/04/2023
+Program - Create a program that will display counting of a thing
+		  in sequential order and reverse order
+@Author - Jeff Dinsmore
+@Date - 10/04/2023
 
 */
 
